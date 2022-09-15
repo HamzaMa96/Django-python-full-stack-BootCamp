@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Details</title>
+</head>
+<body>
+    <h1>Details for {{book.title}}</h1>
+    <ul>
+        <li>Author:
+            <ul>
+                <li>
+                    Name: {{book.author.first_name}} {{book.author.last_name}}
+                </li>
+                <li>
+                    Birth Date: {{book.author.date_of_birth}}
+                </li>
+            </ul>
+        </li>
+        <li>Summary:
+            <ul>
+                <li>
+                    {{book.summary}}
+                </li>
+            </ul>
+        </li>
+        <li>ISBN:
+            <ul>
+                <li>
+                    {{book.isbn}}
+                </li>
+            </ul>
+        </li>
+        <li>Language:
+            <ul>
+                <li>
+                    {{book.language}}
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
